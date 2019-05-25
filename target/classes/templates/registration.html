@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Реєстрація</title>
+        <meta charset="utf-8"/>
+        <link href="../static/style.css" th:href="@{/style.css}" rel="stylesheet" />
+        <link href="../static/login.css" th:href="@{/login.css}" rel="stylesheet" />
+    </head>
+    <body>
+
+        <div class="login">
+            <form action="/result" method="post">
+                    <p><span class="fontawesome-user"></span><input name="name" type="text" placeholder="Ім'я"></p>
+                    <p><span class="fontawesome-user"></span><input name="surname" type="text" placeholder="Прізвище"></p>
+                    <p><span class="fontawesome-user"></span><input name="email" type="text" placeholder="Електронна скринька"></p>
+                    <p><span class="fontawesome-lock"></span><input name="password" type="text" placeholder="Пароль"></p>
+                    <input type="submit" value="Зареєструвати">
+            </form>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Користувача зареєстровано</title>
+        <meta charset="utf-8"/>
+        <link href="../static/style.css" th:href="@{/style.css}" rel="stylesheet" />
+        <link href="../static/login.css" th:href="@{/login.css}" rel="stylesheet" />
+    </head>
+    <body>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <p class="peshka">[[${name}]] [[${surname}]] [[${email}]] [[${password}]]</p>
+        <p id="green">Користувач успішно зареєстрований у Базі Даних!</p>
+        <div class="login">
+            <form action="/" method="GET">
+                <input type="submit" value="Повернутися на головну">
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>База Даних</title>
+        <meta charset="utf-8"/>
+        <link href="../static/style.css" th:href="@{/style.css}" rel="stylesheet" />
+        <link href="../static/login.css" th:href="@{/login.css}" rel="stylesheet" />
+    </head>
+    <body>
+        <div th:each="u : ${allUsers}">
+            <a th:href="@{'user-' + ${u.id}}"><p class="peshka" th:text="${u.id + ' - ' + u.name + ' ' + u.surname}"></p></a>
+        </div>
+        <div class="login">
+            <form action="/" method="GET">
+                <input type="submit" value="Повернутися на головну">
+            </form>
+        </div>
+    </body>
+</html>

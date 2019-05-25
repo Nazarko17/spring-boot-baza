@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
+    <head>
+        <title>Користувач</title>
+        <meta charset="utf-8"/>
+        <link href="../static/style.css" th:href="@{/style.css}" rel="stylesheet" />
+        <link href="../static/login.css" th:href="@{/login.css}" rel="stylesheet" />
+    </head>
+    <body>
+        <!--<p class="peshkared">ID:</p><p class="peshkadg" th:text="${currentUser.id}"></p><br><br><br>-->
+        <!--<p class="peshkared">Ім'я:</p><p class="peshkadg" th:text="${currentUser.name}"></p><br><br><br>-->
+        <!--<p class="peshkared">Прізвище:</p><p class="peshkadg" th:text="${currentUser.surname}"></p><br><br><br>-->
+        <!--<p class="peshkared">Пароль:</p><p class="peshkadg" th:text="${currentUser.password}"></p>-->
+        <table>
+            <tr>
+                <td class="peshkared">ID:</td>
+                <td class="peshkadg" th:text="${currentUser.id}"></td>
+            </tr>
+            <tr>
+                <td class="peshkared">Ім'я:</td>
+                <td class="peshkadg" th:text="${currentUser.name}"></td>
+            </tr>
+            <tr>
+                <td class="peshkared">Прізвище:</td>
+                <td class="peshkadg" th:text="${currentUser.surname}"></td>
+            </tr>
+            <tr>
+                <td id="peshkamail">Ел. скринька:</td>
+                <td class="peshkadg" th:text="${currentUser.email}"></td>
+            </tr>
+            <tr>
+                <td class="peshkared">Пароль:</td>
+                <td class="peshkadg" th:text="${currentUser.password}"></td>
+            </tr>
+        </table>
+        <div class="login">
+            <form action="/baza" method="POST">
+                <input type="submit" value="Повернутися до Бази Даних">
+            </form>
+        </div>
+    </body>
+</html>

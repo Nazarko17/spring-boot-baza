@@ -1,0 +1,43 @@
+body {
+    background-color: #2c3338;
+    color: #606468;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5em;
+}
+
+.peshka {
+    font-size: 50px;
+    text-align: center;
+}
+
+.peshkared {
+    font-size: 50px;
+    text-align: left;
+    color: brown;
+}
+
+#peshkamail {
+    font-size: 40px;
+    text-align: left;
+    color: brown;
+}
+
+.peshkadg {
+    font-size: 50px;
+    text-align: left;
+    color: darkgray;
+}
+
+#green {
+    font-size: 30px;
+    text-align: center;
+    color: green;
+}
+
+table {
+    width: 800px;
+    height: 300px;
+    /*align: center;*/
+    /*margin: auto;*/
+}
